@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="payment.css">
+    <!---we had linked our css file----->
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <h1>Wallet</h1>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='home.html'>Home</a></li>
+                    <li><a href='add.html'>Add Points</a></li>
+                    <li><a href='checkbal.html'>Check Balance</a></li>
+                    <li><a href='transaction.html'>Transaction list</li>
+                    <li><a href='payment.html'>Payment</a></li>
+                    <li><a href='index.html'>Logout</a></li>
+                </ul>
+            </nav>
+            </div>
+            </div>
+            <body class="body">
+                <div class="form-box2">
+    <div class="div1"></div>
+    <div class="div2">
+      <h1
+        style="
+          text-align: center;
+          font-family: fantasy;
+          margin-top: 8%;
+          margin-bottom: 5%;
+          font-size: 33px;
+        "
+      >
+      
+        Check the balance
+      </h1>
+      <br>
+      <form name="myform" onsubmit="return validate()">
+      <div style="margin-left: 6%">
+                <input type='text'class='input-field' name="num" placeholder='Enter The Pin' required >
+                <input type='text'class='input-field' name="num1" placeholder='Enter The Amount' required >
+        <br /><br>
+        <br>
+        <button type="submit" class="btn4">SUBMIT</button>
+
+        <button class="btn5">CANCEL</button>
+    </div>
+</div>
+</div></body>
+      </div>
+      <script>
+      function validate(){  
+var num=document.myform.num.value;  
+var num1=document.myform.num1.value;
+if (isNaN(num)){  
+  window.alert("Please fill the Pin with Digits");  
+  return false;  
+}
+else if(isNaN(num1)){
+    window.alert("Please fill the Amount with Digits");  
+  return false; 
+}
+  else{
+    return true;
+  }
+
+}  
+</script>

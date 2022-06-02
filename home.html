@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="style.css">
+    <!---we had linked our css file----->
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar1">
+            <div>
+                <h1>Wallet</h1>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='add.html'>Add Points</a></li>
+                    <li><a href='checkbal.html'>Check Balance</a></li>
+                    <li><a href='transaction.html'>Transaction List</li>
+                    <li><a href='payment.html'>Payment</a></li>
+                    <li><a href='index.html'>Logout</a></li>
+                </ul>
+            </nav>
+            </div>
+            </div>
+    
+  <div class="div1">
+      <h1 style="text-align: center; color: black;font-family: sample; font-size: 60px; margin-top: 1%; ">E-wallet</h1>
+      <p style="font-size: 25px; margin-top: 3%; ">A digital wallet, also known as e-wallet, is an electronic device, online service, or software program that allows one party to make electronic transactions with another party bartering digital currency units for goods and services</p>
+  </br>
+</br>
+      <button class="btn1">Read More</button>
+  </div>
+  <div class="div2">
+
+  </div>
+    <script>
+      const currentLocation = location.href;
+      const menuItem = document.querySelectorAll('a');
+      const menuLength =menuLength.length;
+      for(let i=0; i<menuLength; i++)
+      {
+        if(menuItem[i].href === currentLocation){
+          menuItem[i].className="c"
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>        
+                    </body>
+</html>
